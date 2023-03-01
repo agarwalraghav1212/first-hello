@@ -12,5 +12,10 @@ pipeline {
                 sh 'pm2 start index.js'
             }
         }
+        stage('show'){
+            steps{
+                sh 'pm2 list'
+            }
+        }    
     }
 }
