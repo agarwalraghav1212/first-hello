@@ -16,6 +16,8 @@ pipeline {
                targetRepo: 'npm_remote_demo',
                publishArtifacts: true
             )
+         }
+        }      
         stage('Test') {
             steps {
                 sh 'npm start index.js'
