@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'pm2 start index.js'
+                sh 'npm start index.js'
             }
         }
         stage('show'){
             steps{
-                sh 'pm2 list'
+                sh 'npm list'
             }
         }    
     }
