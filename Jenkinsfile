@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm i'
+                sh 'npm install'
             }
         }
         stage('Test') {
@@ -12,10 +12,6 @@ pipeline {
                 sh 'npm start index.js'
             }
         }
-        stage('show'){
-            steps{
-                sh 'npm list'
-            }
-        }    
+         
     }
 }
