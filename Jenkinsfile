@@ -7,8 +7,7 @@ pipeline {
                 sh 'npm i'
             }
         }
-         
-       stage('Test') {
+        stage('Test') {
             steps {
                 sh 'npm start index.js'
             }
